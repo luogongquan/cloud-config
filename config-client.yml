@@ -1,0 +1,30 @@
+﻿#测试汉字
+server:
+  port: 7001
+spring:
+  application:
+    name: config-client
+  profiles: test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    hostname: eureka7001.com
+---
+server:
+  port: 7001
+spring:
+  application:
+    name: config-client
+  profiles: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    hostname: eureka7001.com

@@ -11,9 +11,6 @@ spring:
   profiles: dev
 server:
   port: 8200
-spring:
-  application:
-    name: produce
 
 eureka:
   client:
@@ -32,9 +29,7 @@ spring:
   profiles: test
 server:
   port: 8300
-spring:
-  application:
-    name: produce
+
 
 eureka:
   client:

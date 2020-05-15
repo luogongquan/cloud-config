@@ -1,4 +1,4 @@
-﻿#测试汉字
+#测试汉字
 #编码为utf-8
 spring:
   profiles:

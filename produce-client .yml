@@ -1,0 +1,48 @@
+﻿#测试汉字
+#编码为utf-8
+spring:
+  profiles:
+    active:
+      - dev
+---
+spring:
+  application:
+    name: produce
+  profiles: dev
+server:
+  port: 8200
+spring:
+  application:
+    name: produce
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: produce
+feign:
+  hystrix:
+    enabled: true
+---
+spring:
+  application:
+    name: produce
+  profiles: test
+server:
+  port: 8300
+spring:
+  application:
+    name: produce
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: produce
+feign:
+  hystrix:
+    enabled: true

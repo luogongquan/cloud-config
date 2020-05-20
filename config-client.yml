@@ -8,7 +8,7 @@ spring:
 config:
   info: aaaa
 server:
-  port: 7002
+  port: 7003
 spring:
   application:
     name: config-client1

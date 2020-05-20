@@ -11,7 +11,7 @@ server:
   port: 7002
 spring:
   application:
-    name: config-client
+    name: config-client1
   profiles: test
 eureka:
   client:

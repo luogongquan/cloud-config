@@ -5,8 +5,10 @@ spring:
     active:
       - dev
 ---
+config:
+  info: aaaa
 server:
-  port: 7003
+  port: 7002
 spring:
   application:
     name: config-client

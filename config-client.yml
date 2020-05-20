@@ -23,7 +23,7 @@ eureka:
     hostname: eureka7001.com
 ---
 server:
-  port: 7002
+  port: 7001
 spring:
   application:
     name: config-client1
